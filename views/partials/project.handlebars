@@ -1,0 +1,25 @@
+<div class="project-card">
+    <div class="project-title">
+        <h2>{{name}}</h2>
+        <img src="{{imageURL}}" alt="{{name}}" />
+    </div>
+    <div class="project-text">
+        <div class="project-description">
+            <p class="project-headline">{{subtitle}}</p>
+            <p class="description">{{description}}</p>
+            <ul>
+                {{#each technologies}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+    <div class="project-links">
+        {{#if liveLink}}
+        <a href="{{liveLink}}"><i class="fas fa-anchor"></i></a>
+        {{/if}}
+        {{#if}}
+        <a href="{{githubLink}}"><i class="fab fa-github"></i></a>
+        {{/if}}
+    </div>
+</div>
