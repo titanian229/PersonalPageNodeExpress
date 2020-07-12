@@ -1,10 +1,11 @@
 const express = require('express');
 const index = require('./routes/index');
-const portfolioproject = require('./routes/portfolioproject');
+const projects = require('./routes/projects');
 
 const router = express.Router();
 
-router.get('/', index);
-router.get('/project', portfolioproject);
+router.get('/', index.index);
+router.get('/projects', projects.projectsRoot);
+router.get('/projects/:project', projects.projectSingle);
 
 module.exports = router;

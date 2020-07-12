@@ -15,7 +15,16 @@
         "imageURL": "./images/icons/PageExchange.png",
         "githubLink": "https://github.com/titanian229/TheSemicolons",
         "liveLink": "https://obscure-stream-03506.herokuapp.com/",
-        "technologies": ["JavaScript", "HTML/CSS", "NodeJS", "Handlebars", "Express", "Auth0/PassportJS", "MySQL"]
+        "technologies": ["JavaScript", "HTML/CSS", "Node.js", "Handlebars", "Express", "Auth0/PassportJS", "MySQL"]
+    },
+    {
+        "name": "JamesDeveloping.ca",
+        "subtitle" : "My personal webpage",
+        "description" : "Node/Express based server, using handlebars templating.  I wanted something that would write the page for me, so portfolio projects are loaded from a database I add to, instead of being individually created in HTML.  Styling is with Sass, and animations are created either in plain CSS or using GreenSocks.",
+        "imageURL" : "./images/icons/JamesDeveloping.jpg",
+        "githubLink" : "https://github.com/titanian229/PersonalPageNodeExpress",
+        "liveLink" : "https://jamesdeveloping.ca",
+        "technologies" : ["JavaScript", "HTML", "Sass", "Node.js", "Handlebars", "Express"]
     },
     {
         "name": "ScheduleCreator",
