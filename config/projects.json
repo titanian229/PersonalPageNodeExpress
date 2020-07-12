@@ -5,14 +5,14 @@
         "description": "A web application for planning and mapping routes, that displays carbon contributions from each. ",
         "githubLink": "https://github.com/titanian229/EcoRoute",
         "liveLink": "https://go-ecoroute.com",
-        "imageURL": "./assets/icons/EcoRouteTall.jpg",
+        "imageURL": "./images/icons/EcoRouteTall.jpg",
         "technologies": ["JavaScript", "HTML/CSS", "HERE Mapping/Routing API", "OpenWeatherMap API", "Bootstrap"]
     },
     {
         "name": "PageExchange",
         "subtitle": "Find a new life for your old books",
         "description": "Node/Express based web application, a communal library for sharing and exchanging books acros the internet.  Has a built in messaging system and uses Auth0 authenticated accounts",
-        "imageURL": "./assets/icons/PageExchange.png",
+        "imageURL": "./images/icons/PageExchange.png",
         "githubLink": "https://github.com/titanian229/TheSemicolons",
         "liveLink": "https://obscure-stream-03506.herokuapp.com/",
         "technologies": ["JavaScript", "HTML/CSS", "NodeJS", "Handlebars", "Express", "Auth0/PassportJS", "MySQL"]
@@ -23,7 +23,7 @@
         "description": "Application that provides a simple way to create many Google Calendar events based on a week's shift schedule, while logging expected pay and shift information to a SQL database. Easily accessed with through an android application or a command line interface.",
         "githubLink": "https://github.com/titanian229/schedule-creator-public",
         "liveLink": "",
-        "imageURL": "./assets/icons/scheduler1.jpg",
+        "imageURL": "./images/icons/scheduler1.jpg",
         "technologies": ["Python", "Kivy", "Google Calendar API", "SQLite"]
     },
     {
@@ -32,7 +32,7 @@
         "description": "Weather dashboard for easily checking conditions in multiple cities, using the OpenWeatherMap API",
         "githubLink": "https://github.com/titanian229/homework06",
         "liveLink": "https://titanian229.github.io/homework06",
-        "imageURL": "./assets/icons/weather-dashboard.jpg",
+        "imageURL": "./images/icons/weather-dashboard.jpg",
         "technologies": ["HTML/CSS", "JavaScript", "OpenWeatherMap API"]
     },
     {
@@ -41,7 +41,7 @@
         "description": "A simple proof of concept using local storage to plan out a workday in a layout that responds to the time.",
         "githubLink": "https://github.com/titanian229/workdayScheduler",
         "liveLink": "https://titanian229.github.io/workdayScheduler",
-        "imageURL": "./assets/icons/workday-scheduler.jpg",
+        "imageURL": "./images/icons/workday-scheduler.jpg",
         "technologies": ["HTML/CSS", "JavaScript", "Moment.js"]
     },
     {
@@ -50,7 +50,7 @@
         "description": "A timed quiz that tests you on the basics of Javascript then shows you how you compare to others.",
         "githubLink": "https://github.com/titanian229/homework04",
         "liveLink": "https://titanian229.github.io/homework04",
-        "imageURL": "./assets/icons/javascript-quiz.jpg",
+        "imageURL": "./images/icons/javascript-quiz.jpg",
         "technologies": ["HTML/CSS", "JavaScript"]
     },
     {
@@ -59,7 +59,7 @@
         "description": "A javascript based password generator that takes requirements and randomly creates passwords of a given length.",
         "githubLink": "https://github.com/titanian229/homework03",
         "liveLink": "https://titanian229.github.io/homework03",
-        "imageURL": "./assets/icons/password-generator.jpg",
+        "imageURL": "./images/icons/password-generator.jpg",
         "technologies": ["HTML/CSS", "JavaScript"]
     },
     {
@@ -68,7 +68,7 @@
         "description": "An android application built using Python, SQLite and the Google Sheets API, for tracking orders and converting item numbers",
         "githubLink": "https://github.com/titanian229/tc-tools-public",
         "liveLink": "",
-        "imageURL": "./assets/icons/tc-main.png",
+        "imageURL": "./images/icons/tc-main.png",
         "technologies": ["Python", "Kivy", "SQLite", "Google Sheets API"]
     }
 ]

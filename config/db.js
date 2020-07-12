@@ -1,9 +1,10 @@
 const fs = require('fs');
+const path = require('path');
 
 class DB {
     constructor(tableName) {
         try {
-            this.data = fs.readFileSync(`./${tableName}.json`);
+            this.data = JSON.parse(fs.readFileSync(path.join(__dirname, `${tableName}.json`)));
         } catch (err) {
             // eslint-disable-next-line no-console
             console.log(err);
