@@ -1,12 +1,11 @@
-const Project = require('../models/projects');
+const express = require('express');
+const home = require('./home');
+const projects = require('./projects');
 
-const ProjectModel = new Project();
+const router = express.Router();
 
-module.exports.index = async (req, res) => {
-    const projects = await ProjectModel.getAllProjects();
-    res.render('index', {
-        title: 'James T Lee',
-        scripts: ['indexanimations.js', 'indexlisteners.js', 'projectslidein.js'],
-        projects,
-    });
-};
+router.get('/', home);
+router.get('/projects', projects.projectsRoot);
+router.get('/projects/:project', projects.projectSingle);
+
+module.exports = router;

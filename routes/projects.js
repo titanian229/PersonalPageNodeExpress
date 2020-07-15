@@ -4,22 +4,19 @@ const Project = require('../models/projects');
 const URLModel = new URLs();
 const ProjectModel = new Project();
 
-async function projectSingle(req, res) {
-    const projectURL = req.params.project;
-    const projectName = await URLModel.getURL(projectURL).then((item) => (item[0] ? item[0].name : ''));
+module.exports.projectSingle = async ({ params: { project } }, res) => {
+    const projectName = await URLModel.getURL(project).then((item) => (item[0] ? item[0].name : ''));
     if (projectName === '') {
         res.redirect('/projects');
         return;
     }
-    const project = await ProjectModel.getProject(projectName).then((pro) => pro[0]);
+    const projectInfo = await ProjectModel.getProject(projectName).then((pro) => pro[0]);
 
-    res.render('projectinfotemplate', { title: projectName, ...project });
-}
+    res.render('projectinfotemplate', { title: projectName, ...projectInfo });
+};
 
-async function projectsRoot(req, res) {
+module.exports.projectsRoot = async (req, res) => {
     const projects = await ProjectModel.getAllProjects();
 
     res.render('projects', { title: 'My Projects', projects });
-}
-
-module.exports = { projectsRoot, projectSingle };
+};
